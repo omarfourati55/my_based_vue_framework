@@ -13,6 +13,15 @@ export enum LoginState {
  * @property {string} picture - User's picture URL
  */
 
+export const Person = {
+    personId: 0,
+    firstname: '',
+    lastname: '',
+    gender: '',
+    title: '',
+    personalNumber: '',
+    picture: '',
+}
 /**
  * @typedef {Object} UserGroup
  * @property {number} userGroupId - User group ID
@@ -21,12 +30,22 @@ export enum LoginState {
  * @property {string} abbr - Abbreviation of the user group
  */
 
+export const UserGroup = {
+    userGroupId: 0,
+    title: '',
+    description: '',
+    abbr: '',
+}
 /**
  * @typedef {Object} ApplicationModule
  * @property {number} moduleId - Module ID
  * @property {string} title - Title of the application module
  */
 
+export const ApplicationModule = {
+    moduleId: 0,
+    title: '',
+}
 /**
  * @typedef {Object} Application
  * @property {string} uuid - UUID of the application

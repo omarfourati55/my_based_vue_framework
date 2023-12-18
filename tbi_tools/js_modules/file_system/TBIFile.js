@@ -29,7 +29,7 @@ export class TBIFile {
  * @property (string) apiLink
  */
 
-const TBIFileListSchema = {
+export const TBIFileListSchema = {
     id: 0,
     name: '',
     type: '',

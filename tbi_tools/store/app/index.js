@@ -1,9 +1,9 @@
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
 import {TBIVersion} from "../../js_modules/core/TBIVersion.js";
-import {AppWireframes, TBIBreakpoints, TBIOrientation} from "./types.js";
+import {AppWireframes, TBIBreakpoints, TBIOrientation, AppState} from "./types.js";
 
-const app_var= {
+const app_var: AppState  = {
     appName: 'My App',
     version: new TBIVersion({ major: 0, minor: 0, patch: 0 }),
     loadingTimeInMs: 0,

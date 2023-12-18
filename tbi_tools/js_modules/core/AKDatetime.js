@@ -1,6 +1,6 @@
 import  { format, parse } from 'date-fns'
 
-const tbiDefaultDateFormats = {
+export const tbiDefaultDateFormats = {
     de_DE: 'dd.MM.yyyy',
     en_EN: 'yyyy-MM-dd',
 };

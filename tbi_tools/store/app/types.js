@@ -47,6 +47,14 @@ export enum TBIMessageType {
  * @property {string} [color] - Color for the buttons of the CenteredNav (optional)
  */
 
+export const TBITheMainMenuItem = {
+    title: '',
+    name: '',
+    tags: [],
+    link: '',
+    icon: '',
+    color:'',
+}
 /**
  * @typedef {Object} AppNavigationItem
  * @property {string} title - Title which will be displayed
@@ -63,6 +71,20 @@ export enum TBIMessageType {
  * @property {boolean} [hideInNav] - Whether to hide the item in the navigation (optional)
  */
 
+export const AppNavigationItem = {
+    title: '',
+    name: '',
+    tags: [],
+    link: '',
+    icon: '',
+    viewRights: [],
+    groupRights: [],
+    children: [],
+    vueComponent: null,
+    order: 0,
+    hideInNav: false,
+}
+
 
 /**
  * @typedef {Object} AppMessage
@@ -71,6 +93,13 @@ export enum TBIMessageType {
  * @property {TBIBECommErrorResponseSchema} [errorData] - Error data (optional)
  * @property {boolean} [messageWasDisplayed] - Whether the message was displayed (optional)
  */
+
+export const AppMessage = {
+    messageType: TBIMessageType.info,
+    messageTranslatableParts: [],
+    errorData: null,
+    messageWasDisplayed: false,
+}
 
 /**
  * @typedef {Object} AppState
@@ -89,3 +118,18 @@ export enum TBIMessageType {
  * @property {string} preLoginURL - Pre-login URL
  */
 
+export const AppState = {
+    appName: '',
+    version: undefined,
+    viewportHeight: 0,
+    viewportWidth: 0,
+    breakpoint: TBIBreakpoints.xs,
+    orientation: TBIOrientation.landscape,
+    currentWireframe: AppWireframes.Loading,
+    loadingTimeInMs: 0,
+    navigationMenu: [],
+    messages: [],
+    currentModuleTitle: '',
+    isMobile: false,
+    preLoginURL: '',
+}

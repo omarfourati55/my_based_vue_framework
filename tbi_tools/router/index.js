@@ -1,2 +1,1 @@
-
-const TBIRoutes : RouteMenuItem[] = []
+export const TBIRoutes : RouteMenuItem[] = []

@@ -3,7 +3,7 @@ import {TBIFormatString} from "./TBIFormat.js";
 /**
  * These are the formats you can print out the Version
  */
-const TBIOutFormats = {
+export const TBIOutFormats = {
     IntFullString: '%(major)i.%(minor)i.%(patch)i',
     HexFullString: '%(major)02X.%(minor)02X.%(patch)02X',
 };
@@ -11,7 +11,7 @@ const TBIOutFormats = {
 /**
  * These are all the Version numbers itself
  */
-const TBIVersionNumbersParam = {
+export const TBIVersionNumbersParam = {
     major: undefined,
     minor: undefined,
     patch: undefined,
