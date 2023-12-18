@@ -20,11 +20,14 @@ const TBIVersionNumbersParam = {
      */
     byText: undefined,
 };
-
+export interface TBIVersionInterface {
+    versions ;
+    defaultOutFormat;
+}
 /**
  * This class is for a default version
  */
-class TBIVersion {
+export class TBIVersion {
     /**
      * This ist the content of the current version
      */
